@@ -11,22 +11,20 @@ body  {
 	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
 	padding: 0;
 	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
-	color: #000000;
+	color: #57587;
 }
 .thrColLiqHdr #container { 
-	width: 80%;  /* this will create a container 80% of the browser width */
+	width: 100%;  /* this will create a container 80% of the browser width */
 	background: #FFFFFF;
 	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
 	border: 1px solid #000000;
 	text-align: left; /* this overrides the text-align: center on the body element. */
 } 
 .thrColLiqHdr #header { 
-	background: #DDDDDD; 
-	padding: 0 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	background: #DDDDDD; /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
 } 
 .thrColLiqHdr #header h1 {
-	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
-	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
 }
 
 /* Tips for sidebars:
@@ -98,7 +96,19 @@ body  {
 
 <div id="container">
  <div id="header">
-    <h1 align="center" id="top"><img src="SB.png" width="72" height="72" align="center"/><img src="sajilo byapar_2.png" width="150" height="72" align="center"/></h1>
+    <h1 align="center" id="top"><img src="SB.png" width="72" height="72" align="center"/><img src="sajilo byapar_2.png" width="150" height="72" align="center"/>
+    <p><form method="post" name="startform">
+ <pre><a href="productregister.html"><b>Add Product Detail</b></a>                                                                                                      <input type="email" name="username" placeholder="username" required="true"/><input type="password" name="password" placeholder="password" required="true"/><input type="submit" value="Log In" style="background:#3F3"/></pre></form><form method="post" action="registrationform.html" name="register"><pre><input type="submit" value="Sign Up" style="background:#3F3"/></a></pre>
+</form></p>
+    <p align="center">  
+ ||<a href="index.html"> Home</a>  
+ ||<a href="aboutus.html"> About Us</a> 
+ ||<a href="list.html"> Product List</a>
+ ||<a href="faqs.html"> FAQs</a>
+ ||<a href="gallery.html"> Gallery</a>
+ ||<a href="links.html"> Related Links</a> 
+ ||<a href="contactus.html"> Contact Us</a> ||
+</p></h1>
   <!-- end #header --></div>
   <div id="sidebar1">
   <h3>Menu</h3>
@@ -126,7 +136,15 @@ body  {
 	<!-- end #mainContent --></div>
 	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
   <div id="footer">
-    <p>Footer</p>
+    <p align="center">  
+ ||<a href="policy.html"> Terms and Policies</a>  
+ ||<a href="privacy.html"> Privacy</a> 
+ ||<a href="help.html"> Help Center</a>
+ ||<a href="report.html"> Report a Problem</a>
+ ||<a href="feeds.html"> Feedback</a>
+ ||<a href="service.html">Services</a> || <br/>
+ © 2015-2019 Sajilo Byapar<br/>All Rights Reserved<br/>
+ Gongabu, Kathmandu<br/>Nepal</p>
   <!-- end #footer --></div>
 <!-- end #container --></div>
 </body>
