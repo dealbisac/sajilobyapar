@@ -4,6 +4,43 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Sajilo Byapar | Registration</title>
 <link rel="favicon icon" href="favicon.png" type="image/x-icon" />
+<script type="text/javascript">
+<!--
+function validateEmail()
+{
+ 
+   var emailID = document.form.email.value;
+   atpos = emailID.indexOf("@");
+   dotpos = emailID.lastIndexOf(".");
+   if (atpos < 1 || ( dotpos - atpos < 2 )) 
+   {
+       alert("Please enter correct email ID")
+       document.form.email.focus() ;
+       return false;
+   }
+   return( true );
+}
+
+function validate()
+{
+   if( document.form.email.value == "" )
+   {
+     alert( "Please provide your Email!" );
+     document.myForm.EMail.focus() ;
+     return false;
+   }else
+   {
+     // Put extra check for data format
+     var ret = validateEmail();
+     if( ret == false )
+     {
+          return false;
+     }
+   }
+}
+//-->
+</script>
+
 </head>
 <body bgcolor="#99FF33">
 <h1 align="center" id="top">Sajilo Baypar</h1>
@@ -16,20 +53,20 @@
  ||<a href="links.html"> Related Links</a> 
  ||<a href="contactus.html"> Contact Us</a> || </p>
 </p> </div>
-<form action="submit.html" method="post" name="form">
+<form action="submit.html" method="post" name="form" onsubmit="return(validate());">
 <fieldset>
 <legend align="center"> <b> Registration Form </b> </legend><br /> 
          <pre><b>First name*                     Middle Name                  Last Name*</b></pre>
-<input type="text" placeholder="first name" required="true"/>
+<input type="text" placeholder="first name" autofocus required="true"/>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="middle name"/>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="last name" required="true"/>
      <br /><pre><b>Sajilobyapar ID                Password                     Confirm Password</b></pre>
-     <input type="email" placeholder="create sajilo byapar ID" required="true"/>
+     <input type="email" placeholder="create sajilo byapar ID" name="email" required="true"/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" placeholder="password" required="true"/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" placeholder="confirm password" required="true"/>
      <br /><pre><b>Date Of Birth*                  Gender*                      Mobile no</b></pre>
         <select name="select" required="true">
-        <option value="day">1</option>
+        <option value="day" selected="selected">1</option>
         <option value="day">2</option>
         <option value="day">3</option>
         <option value="day">4</option>
@@ -61,9 +98,9 @@
         <option value="day">30</option>
         <option value="day">31</option>
         <option value="day">32</option> 
-        </select>
+    </select>
         <select name="select" required="true">
-        <option value="month">January</option>
+        <option value="month" selected="selected">January</option>
         <option value="month">February</option>
         <option value="month">March</option>
         <option value="month">April</option>
@@ -75,9 +112,9 @@
         <option value="month">Octuber</option>
         <option value="month">November</option>
         <option value="month">December</option>
-        </select> 
+    </select> 
         <select name="select" required="true">
-        <option value="year">1960</option>
+        <option value="year" selected="selected">1960</option>
          <option value="year">1961</option>
           <option value="year">1962</option>
            <option value="year">1963</option>
@@ -119,14 +156,14 @@
                           <option value="year">1999</option>
                            <option value="year">2000</option>
                             <option value="year">2001</option>
-        </select>
+     </select>
        &nbsp;&nbsp; &nbsp; &nbsp; <select name="select" required="true">
         <option value="select">Male</option>
         <option value="select">Female</option>
         <option value="select">Other</option>
         </select>
         &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" placeholder="contact" />
-        <br /><br /><input type="checkbox" />I confirm the information provided above are correct and my own. I also hereby agree to the <a href="terms.html" target="_blank">Terms and Conditions </a>set by Sajilo Byapar.
+        <br /><br /><input type="checkbox" />I confirm the information provided above are correct and my own. I also hereby agree to the <a href="policy.html" target="_blank">Terms and Conditions </a>set by Sajilo Byapar.
        <br /><br />
        <input type="submit" value="Submit" style="background:#09F;"/>&nbsp;&nbsp;
        <input type="reset" value="Reset" style="background:#09F;"/>
@@ -136,13 +173,14 @@
      <hr/>
 <div id="footer">
 <p align="center">  
- ||<a href="index.html"> Home</a>  
- ||<a href="aboutus.html"> About Us</a> 
- ||<a href="list.html"> Product List</a>
- ||<a href="faqs.html"> FAQs</a>
- ||<a href="gallery.html"> Gallery</a>
- ||<a href="links.html"> Related Links</a> 
- ||<a href="contactus.html"> Contact Us</a>|| 
+||<a href="policy.html"> Terms and Policies</a>  
+ ||<a href="privacy.html"> Privacy</a> 
+ ||<a href="help.html"> Help Center</a>
+ ||<a href="report.html"> Report a Problem</a>
+ ||<a href="feeds.html"> Feedback</a>
+ ||<a href="service.html">Services</a> || <br/>
+ © 2015-2019 Sajilo Byapar<br/>All Rights Reserved<br/>
+ Gongabu, Kathmandu<br/>Nepal
 </p>
 </div>
 </body>
